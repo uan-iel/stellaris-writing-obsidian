@@ -1,0 +1,10 @@
+{
+  "id": "stellaris-writing",
+  "name": "Stellaris Writing",
+  "version": "0.1.6",
+  "minAppVersion": "1.5.0",
+  "description": "A Stellaris-style writing check-in workspace that links stars to local Obsidian notes and canvases.",
+  "author": "Selene",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
