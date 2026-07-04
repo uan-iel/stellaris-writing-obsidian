@@ -1979,7 +1979,10 @@ button {
   border-color: rgba(82, 62, 34, 0.24);
 }
 
-.language-toggle {
+.app-shell .language-toggle,
+.app-shell .language-toggle:hover,
+.app-shell .language-toggle:focus,
+.app-shell .language-toggle:active {
   align-self: end;
   min-height: 40px;
   padding: 0 14px;
@@ -1988,9 +1991,19 @@ button {
   align-items: center;
   gap: 8px;
   color: var(--ink);
-  background: var(--panel-bg);
-  border: 1px solid rgba(224, 166, 89, 0.2);
+  background: transparent;
+  border: 1px solid rgba(224, 166, 89, 0.32);
   border-radius: 8px;
+  box-shadow: none;
+  outline: none;
+}
+
+.app-shell.theme-day .language-toggle,
+.app-shell.theme-day .language-toggle:hover,
+.app-shell.theme-day .language-toggle:focus,
+.app-shell.theme-day .language-toggle:active {
+  background: transparent;
+  border-color: rgba(82, 62, 34, 0.28);
 }
 
 .language-toggle span {
