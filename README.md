@@ -22,15 +22,25 @@
 
 等待上架。
 
-### 手动安装
+### 手动安装（打开即用）
 
-1. 下载 Release 中的 `stellaris-writing-obsidian-plugin.zip` 并解压
-2. 把解压后的 `stellaris-writing` 文件夹复制到你的 Obsidian 仓库：
+1. 到 [Releases](https://github.com/uan-iel/stellaris-writing-obsidian/releases/latest) 下载 `stellaris-writing-0.1.6.zip`
+2. 解压后把文件夹放到你的 Obsidian 仓库：
    ```text
    <你的仓库>/.obsidian/plugins/stellaris-writing/
    ```
+   最终结构应为：
+   ```text
+   stellaris-writing/
+   ├── main.js
+   ├── styles.css
+   ├── manifest.json
+   └── assets/
+   ```
 3. 在 Obsidian 中打开 **设置 → 社区插件 → 已安装插件**
 4. 找到 **Stellaris Writing** 并启用
+
+> **注意**：不要直接从源码仓库的 `src/` 目录复制文件到插件目录，必须先运行 `npm run build` 生成 `dist/`，或使用 Release 里已经构建好的压缩包。早期版本因 `manifest.json` 缺少 `main` 字段会导致加载失败，已在 0.1.6 修复。
 
 ## 使用
 
